@@ -1,17 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My First Website</title>
-  <style>
-    body {
-      background-color: lightblue;
-      font-family: Arial;
-      text-align: center;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Gaming Mods | [Your Channel Name]</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <h1>Hello, world!</h1>
-  <p>Welcome to my website on GitHub Pages!</p>
+<body class="bg-black text-white font-sans">
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-purple-800 to-indigo-900 p-10 text-center">
+    <h1 class="text-5xl font-extrabold mb-4">🎮 [Your Channel Name]</h1>
+    <p class="text-xl">Custom Mods. Epic Gameplay. Community-Driven.</p>
+    <a href="#mods" class="mt-6 inline-block bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-full text-lg font-bold">Explore Mods ↓</a>
+  </section>
+
+  <!-- YouTube Embed -->
+  <section class="p-10 text-center">
+    <h2 class="text-3xl font-bold mb-4">🔥 Latest Video</h2>
+    <div class="flex justify-center">
+      <iframe class="w-full md:w-2/3 h-64 md:h-96" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- Mods Section -->
+  <section id="mods" class="p-10 bg-gray-900">
+    <h2 class="text-3xl font-bold text-center mb-8">🛠️ Download My Mods</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+
+      <!-- Mod Card -->
+      <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+        <h3 class="text-2xl font-bold">Mod Name #1</h3>
+        <p class="text-gray-300 mt-2">Short description of the mod. What makes it awesome?</p>
+        <a href="https://yourmodlink.com" target="_blank" class="mt-4 inline-block bg-green-600 hover:bg-green-700 px-4 py-2 rounded">Download</a>
+      </div>
+
+      <!-- Repeat for other mods -->
+      <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+        <h3 class="text-2xl font-bold">Mod Name #2</h3>
+        <p class="text-gray-300 mt-2">Another mod with cool features and fun mechanics.</p>
+        <a href="https://yourmodlink.com" target="_blank" class="mt-4 inline-block bg-green-600 hover:bg-green-700 px-4 py-2 rounded">Download</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-950 text-center p-6 text-gray-400">
+    © 2025 [Your Channel Name] | Powered by GitHub Pages
+  </footer>
+
 </body>
 </html>
