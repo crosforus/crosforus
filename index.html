@@ -2,52 +2,104 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Gaming Mods | [Your Channel Name]</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CROSFORUS</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: #0f0f0f;
+    }
+    .mod-card:hover {
+      transform: scale(1.03);
+      transition: all 0.3s ease-in-out;
+    }
+  </style>
 </head>
-<body class="bg-black text-white font-sans">
+<body class="text-white font-sans">
 
-  <!-- Hero Section -->
-  <section class="bg-gradient-to-br from-purple-800 to-indigo-900 p-10 text-center">
-    <h1 class="text-5xl font-extrabold mb-4">🎮 [Your Channel Name]</h1>
-    <p class="text-xl">Custom Mods. Epic Gameplay. Community-Driven.</p>
-    <a href="#mods" class="mt-6 inline-block bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-full text-lg font-bold">Explore Mods ↓</a>
+  <!-- Header -->
+  <header class="p-6 bg-black border-b border-gray-700 shadow-lg">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <!-- Logo + Title -->
+      <div class="flex items-center space-x-4">
+        <img src="logo.png" alt="Logo" class="w-10 h-10 rounded-full" />
+        <h1 class="text-3xl font-bold text-lime-400">CROS FORUS</h1>
+      </div>
+      <!-- Navigation -->
+      <nav>
+        <a href="#mods" class="ml-6 text-yellow-300 hover:text-white">Mods</a>
+        <a href="#videos" class="ml-6 text-yellow-300 hover:text-white">Videos</a>
+        <a href="#contact" class="ml-6 text-yellow-300 hover:text-white">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Animated Banner -->
+<section class="w-full">
+  <img src="banner.gif" alt="Animated Banner" class="w-full max-h-96 object-cover" />
+</section>
+
+  <!-- Hero -->
+  <section class="text-center py-20 bg-gradient-to-r from-gray-900 to-black">
+    <p class="text-xl text-lime-400 animate-pulse mb-4">🔥 SOMETHING BIG IS COMING SOON.... 🔥</p>
+    <h2 class="text-5xl font-extrabold mb-4">Welcome to the World of CROSFORUS</h2>
+    <p class="text-lg text-gray-300 mb-8">Download high-quality custom mods made for [SA-MP] and beyond.</p>
+    <a href="#mods" class="bg-lime-500 hover:bg-lime-600 text-black px-6 py-3 rounded-full font-bold text-lg">Browse Mods ↓</a>
   </section>
 
-  <!-- YouTube Embed -->
-  <section class="p-10 text-center">
-    <h2 class="text-3xl font-bold mb-4">🔥 Latest Video</h2>
+  <!-- Mods Showcase -->
+  <section id="mods" class="py-16 bg-[#111]">
+    <div class="max-w-5xl mx-auto text-center mb-10">
+      <h2 class="text-4xl font-bold text-white">🎯 Available Mods</h2>
+      <p class="text-gray-400">Click to download and enjoy!</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 px-6 max-w-6xl mx-auto">
+      
+      <!-- Mod Card 1 -->
+      <div class="mod-card bg-gray-800 p-5 rounded-lg shadow-md border border-gray-700">
+        <h3 class="text-2xl font-bold text-lime-400">COMING SOON</h3>
+        <p class="text-gray-300 mt-2 text-sm">SOON...........</p>
+        <a href="https://youtube.com" target="_blank" class="inline-block mt-4 bg-lime-500 text-black px-4 py-2 rounded hover:bg-lime-600 font-semibold">Download</a>
+      </div>
+
+      <!-- Mod Card 2 -->
+      <div class="mod-card bg-gray-800 p-5 rounded-lg shadow-md border border-gray-700">
+        <h3 class="text-2xl font-bold text-lime-400">COMING SOON</h3>
+        <p class="text-gray-300 mt-2 text-sm">SOON........</p>
+        <a href="https://youtube.com" target="_blank" class="inline-block mt-4 bg-lime-500 text-black px-4 py-2 rounded hover:bg-lime-600 font-semibold">Download</a>
+      </div>
+
+      <!-- Add more mod cards as needed -->
+
+    </div>
+  </section>
+
+  <!-- YouTube Section -->
+  <section id="videos" class="py-16 bg-gray-950 text-center">
+    <h2 class="text-4xl font-bold mb-6">🎥 Latest Video</h2>
     <div class="flex justify-center">
-      <iframe class="w-full md:w-2/3 h-64 md:h-96" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+      <iframe class="w-full md:w-3/4 h-64 md:h-96 border-4 border-lime-400 rounded-lg" src="https://youtu.be/e_04ZrNroTo?si=x8D6ljQbsT1Oj3NG" frameborder="0" allowfullscreen></iframe>
     </div>
   </section>
 
-  <!-- Mods Section -->
-  <section id="mods" class="p-10 bg-gray-900">
-    <h2 class="text-3xl font-bold text-center mb-8">🛠️ Download My Mods</h2>
-    <div class="grid md:grid-cols-2 gap-6">
+  <!-- Discord Section -->
+  <section id="contact" class="py-16 bg-black text-center">
+    <h2 class="text-3xl font-bold text-white mb-4">📢 Join the Community</h2>
+    <p class="text-gray-400 mb-6">Want to chat or get updates? Join our Discord server!</p>
+    <a href="https://discord.gg/sTbu9X6E" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 px-6 py-3 rounded-full font-semibold text-white">Join Discord</a>
+  </section>
 
-      <!-- Mod Card -->
-      <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
-        <h3 class="text-2xl font-bold">Mod Name #1</h3>
-        <p class="text-gray-300 mt-2">Short description of the mod. What makes it awesome?</p>
-        <a href="https://yourmodlink.com" target="_blank" class="mt-4 inline-block bg-green-600 hover:bg-green-700 px-4 py-2 rounded">Download</a>
-      </div>
-
-      <!-- Repeat for other mods -->
-      <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
-        <h3 class="text-2xl font-bold">Mod Name #2</h3>
-        <p class="text-gray-300 mt-2">Another mod with cool features and fun mechanics.</p>
-        <a href="https://yourmodlink.com" target="_blank" class="mt-4 inline-block bg-green-600 hover:bg-green-700 px-4 py-2 rounded">Download</a>
-      </div>
-
-    </div>
+  <!-- WhatsApp Contact -->
+  <section class="py-16 bg-gray-950 text-center">
+    <h2 class="text-3xl font-bold text-green-400 mb-4">📱 Contact Me on WhatsApp</h2>
+    <p class="text-gray-400 mb-6">Have a request or issue? Message me directly.</p>
+    <a href="https://wa.me/6235542808" target="_blank" class="bg-green-500 hover:bg-green-600 px-6 py-3 rounded-full font-semibold text-black">Message on WhatsApp</a>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-950 text-center p-6 text-gray-400">
-    © 2025 [Your Channel Name] | Powered by GitHub Pages
+  <footer class="p-6 text-center bg-gray-900 text-gray-500 text-sm">
+    © 2025 CROSFORUS. Built for gamers, by Crosforus.
   </footer>
 
 </body>
